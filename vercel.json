@@ -28,6 +28,18 @@
       "dest": "client/assets/$1"
     },
     {
+      "src": "/src/(.*)",
+      "dest": "client/src/$1"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "client/manifest.json"
+    },
+    {
+      "src": "/favicon.(.*)",
+      "dest": "client/favicon.$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "client/index.html"
     }
