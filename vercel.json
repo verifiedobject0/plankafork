@@ -9,29 +9,16 @@
           "server/node_modules/sails-postgresql/**",
           "server/node_modules/sails-hook-orm/**",
           "server/config/**",
-          "server/api/**"
+          "server/api/**",
+          "client/dist/**"
         ]
-      }
-    },
-    {
-      "src": "client/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
       }
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "server/app.js"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "server/app.js"
     }
   ]
 }
