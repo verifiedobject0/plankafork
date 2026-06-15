@@ -6,8 +6,7 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "server/node_modules/sails-postgresql/**",
-          "server/node_modules/sails-hook-orm/**",
+          "server/node_modules/**",
           "server/config/**",
           "server/api/**",
           "client/dist/**"
